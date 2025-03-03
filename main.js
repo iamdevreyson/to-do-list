@@ -6,9 +6,8 @@ function submitBtn() {
     
     // Create new div element to wrap all the task element
     const taskContainer = document.createElement('div');
-    taskContainer.classList.add('my-[14px]', 'flex', 'items-center', 'justify-center');
-
-    // taskContainer.classList.add('w-fit', 'mx-auto');
+    taskContainer.classList.add('my-[5px]', 'border-gray-200', 'flex', 'items-center', 'justify-center', 'flex-wrap', 
+    'box-border', 'gap-2');
 
     // Prevents empty input
     if (userInput.value === '') {
@@ -51,7 +50,8 @@ function submitBtn() {
     // Create update button
     let updateBtn = document.createElement('button');
     updateBtn.innerText = 'Update';
-    updateBtn.classList.add('rounded-[3px]', 'border-green-200', 'text-slate-50', 'bg-green-400', 'py-[3px]', 'px-4');
+    updateBtn.classList.add('rounded-[3px]', 'border-green-200', 'text-slate-50', 'bg-green-400',
+                            'py-[3px]', 'px-4', 'max-sm:text-[12px]', 'max-sm:px-[5px]');
 
     updateBtn.addEventListener('click', function () {
 
@@ -66,7 +66,8 @@ function submitBtn() {
     // Create delete button
     let deleteBtn = document.createElement('button');
     deleteBtn.innerText = 'Delete';
-    deleteBtn.classList.add('rounded-[3px]', 'border-red-200', 'text-slate-50', 'bg-red-600', 'py-[3px]', 'px-4');
+    deleteBtn.classList.add('rounded-[3px]', 'border-red-200', 'text-slate-50', 'bg-red-600', 'py-[3px]',
+                            'px-4', 'max-sm:text-[12px]', 'max-sm:px-[5px]');
 
     deleteBtn.addEventListener('click', function () {
         taskContainer.remove(); 
